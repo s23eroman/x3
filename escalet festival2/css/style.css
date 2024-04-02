@@ -1,0 +1,167 @@
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	overflow-x: hidden;
+	font-family: "Quicksand", sans serif;
+	font-style: normal;
+
+}
+
+header{
+	width: 100%;
+	height: auto;
+	background-color: purple;
+	display: flex;
+	padding: 4vh;
+}
+
+#logotip{
+	width: 50%;
+	height: auto;
+	/*background-color: red;*/
+	
+}
+
+#logotip img{
+	width: 20%;
+}
+
+nav{
+	width: 50%;
+	display: flex;
+
+}
+
+#menú{
+	width: auto;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	list-style: none;
+	padding: 5vh;
+	/*background-color: yellow;*/
+}
+
+.linkmenu{
+	width: auto;
+	margin: 5% 10% 10% 10%;
+	font-weight: bold;
+	font-size: 1.2rem;
+
+}
+
+.linkmenu a {
+	text-decoration: none;
+	color: white;
+	border-radius: 16px;
+} 
+
+.linkmenu a:hover{
+	text-decoration-line: underline;
+	text-decoration-thickness: 6px;
+
+} 
+
+
+hero {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#about{
+	width: 100%;
+	height: auto;
+	background-color: seagreen;
+	display: flex;
+	padding: 10%;
+	flex-direction: row;
+
+}
+
+h2{
+	font-size: 3rem;
+	margin-right: 40%; 
+
+}
+
+
+p{
+
+	font-size: 1.2rem;
+
+}
+
+
+footer{
+	background-color: purple;
+	padding: 10%;
+}
+
+h3{
+	font-size: 2rem;
+	margin-bottom: 10px ; 
+	margin-top: 10px;
+
+}
+
+
+.footer-caixa{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+}
+
+.footer-section-about{
+	width: 25%;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+	#menú {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	h2{
+		margin-bottom: 10px;
+	}
+
+	#about{
+		flex-direction: column;
+	}
+
+	.footer-caixa{
+		flex-direction: column;
+	}
+
+	.footer-section-about{
+		width: 100%;
+	}
+}
